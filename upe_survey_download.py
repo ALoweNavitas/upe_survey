@@ -69,6 +69,9 @@ json_df.rename(columns={
     "id" : "respondent_id"
 }, inplace=True)
 
+# Fill NA in the answer column
+json_df['answer'].fillna(json_df['text'], inplace=True)
+
 # Reshaping
 json_df = json_df[[
     'respondent_id',
@@ -82,6 +85,6 @@ json_df = json_df[[
 ]]
 
 # Questions as headers - values / index / column headers
-df = json_df.pivot_table('answer', ['respondent_id', 'college', 'program', 'semester', 'module'], 'question')
+df = json_df.pivot_table('answer', ['respondent_id', 'college', 'program', 'semester', 'module'], 'question', aggfunc=sum).fillna(0)
 df.to_excel('response_data.xlsx')
-print(df)
+df
