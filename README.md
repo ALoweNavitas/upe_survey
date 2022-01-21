@@ -22,18 +22,19 @@ Much like our statistical data, qualitative and quantitative feedback in relatio
 | Period | Task | Status |
 | --- | --- | --- |
 | **Technical Provision**
-| Start up | Scope project documentation | Complete
-| Start up | Create a framework survey | Complete
-| Start up | Implement custom variables to allow survey customisation across colleges | Complete
-| Start up | Create automation scripts w/ Python | Complete
-| Start up | Create a link builder tool for the colleges in Excel | Complete
-| Start up | Transfer code to Azure DevOps for testing in Evidence | Not started
-| Start up | Testing with dummy data | Complete
+| Start up | Scope project documentation | Complete :green_circle:
+| Start up | Create a framework survey | Complete :green_circle:
+| Start up | Implement custom variables to allow survey customisation across colleges | Complete :green_circle:
+| Start up | Create automation scripts w/ Python | Complete :green_circle:
+| Start up | Initial testing with dummy data (custom variables/ automation) | Complete :green_circle:
+| Start up | Create a link builder tool for the colleges in Excel | Complete :green_circle:
+| Start up | Transfer code to Azure DevOps for testing in Evidence | Not started :orange_circle:
+| Start up | Testing with dummy data (using DevOps) | Not started :orange_circle:
 | **Survey Provision**
-| w/c 24 Jan | L&T to review the proposed survey and recommend changes | Not started
-| w/c 14 Feb | Proposals to be shared with colleges w/ proposed survey for review | Not started
-| w/c 14 Mar | Revised survey to be prepared following recommendations from colleges | Not started
-| April | Identify a trial college | Not started
+| w/c 24 Jan | L&T to review the proposed survey and recommend changes | Not started :orange_circle:
+| w/c 14 Feb | Proposals to be shared with colleges w/ proposed survey for review | Not started :orange_circle:
+| w/c 14 Mar | Revised survey to be prepared following recommendations from colleges | Not started :orange_circle:
+| April | Identify a trial college | Not started :orange_circle:
 
 ## Package Requirements
 
