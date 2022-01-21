@@ -8,6 +8,7 @@ access_token = os.environ.get('access_token_surveymonkey')
 survey_id = 315864260
 
 update_survey.update_survey_data(survey_id=survey_id, access_token=access_token)
+update_survey.update_survey_details(survey_id=survey_id, access_token=access_token)
 
 with open('data.json', 'r') as data_file:
     json_data = json.load(data_file)
@@ -86,5 +87,4 @@ json_df = json_df[[
 
 # Questions as headers - values / index / column headers
 df = json_df.pivot_table('answer', ['respondent_id', 'college', 'program', 'semester', 'module'], 'question', aggfunc=sum).fillna(0)
-df.to_excel('response_data.xlsx')
-print(df)
+print(df.head())
