@@ -3,7 +3,8 @@
 ## Todo
 
 - [x] Example
-- [] 
+- [ ] Example
+
 ## Contents
 - Introduction
 - Requirements
