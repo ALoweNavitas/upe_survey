@@ -1,5 +1,6 @@
 *.json
-*.xlsx
+*venv
+response_data.xlsx
 get_surveys.py
 update_survey.py
 test.ipynb
