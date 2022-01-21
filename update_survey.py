@@ -74,8 +74,8 @@ def get_surveys(access_token):
     with open('surveys.json', 'w') as f:
         data = json.dump(json_data, f, indent=4, sort_keys=True)
 
-# # get_surveys()
-# update_survey_details(survey_id=id, access_token=access_token)
-# update_survey_data(survey_id=id, access_token=access_token)
+# get_surveys(access_token = access_token)
+# update_survey_details(survey_id = id, access_token = access_token)
+# update_survey_data(survey_id = id, access_token = access_token)
 
 
