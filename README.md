@@ -7,9 +7,9 @@ This script uses the SurveyMonkey API to download the structure of the survey an
 ## Contents
 
 - Introduction
-- Project Timeline
 - Package Requirements
 - SurveyMonkey API Usage
+- Project Timeline
 
 ## Introduction
 
@@ -26,7 +26,6 @@ Refer to ```requirements.txt``` for the packages and versions used in this scrip
 
 Use ```pip install -r requirements.txt``` to install packages and versions, if they are not already installed in your packages.
 
-An additional script file is used in ```upe_survey_download.py```. ```update_survey.py``` is imported to allow the extraction of survey data and details as JSON files.
 ## SurveyMonkey API Usage
 
  This script uses the SurveyMonkey API to return responses from surveys. The API is REST-based, employs OAuth 2.0, and returns responses in JSON. 
