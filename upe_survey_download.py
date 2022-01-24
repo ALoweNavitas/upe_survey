@@ -3,7 +3,7 @@ import http.client
 import os
 import json
 import time
-from datetime import date, datetime
+from datetime import datetime
 
 def main():
     pass
