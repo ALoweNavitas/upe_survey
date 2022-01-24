@@ -3,7 +3,19 @@ import os
 import json
 from datetime import date, datetime
 import update_survey
+import time
 
+#  Todo: 
+#  - Add the survey update functions to this code instead of having a seperate script;
+#  - Add exception messages to print to console.
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+start_time = time.time()
 access_token = os.environ.get('access_token_surveymonkey')
 survey_id = 315864260
 
@@ -88,3 +100,4 @@ json_df = json_df[[
 # Questions as headers - values / index / column headers
 df = json_df.pivot_table('answer', ['respondent_id', 'college', 'program', 'semester', 'module'], 'question', aggfunc=sum).fillna(0)
 print(df.head())
+print(f'Script executed in: {time.time() - start_time} seconds')
