@@ -11,7 +11,7 @@ This script uses the SurveyMonkey API to download the structure of the survey an
 - SurveyMonkey API Usage
 - Project Timeline
 
-## Introduction
+## :wave: Introduction
 
 Navitas aims to create the best learning experiences for our students, and we hold the Student Experience in high regard to improvement of our business. The best way to understand the Student Experience is directly from the student themselves, with surveys proving an effective tool for collecting feedback. 
 
@@ -20,7 +20,8 @@ As part of our Balance Scorecard project, we track Student Satisfaction and Net 
 As part of the 2022-23 strategy, we aim to centralise the module survey process to UPE using Survey Monkey. Through this process, UPE would create and a control a new module survey which would be administered by the college, with the response data feeding back to a central repository. Colleges would have full access to all responses. This works similarly to the UPE Student Satisfaction Survey conducted annually. 
 
 Much like our statistical data, qualitative and quantitative feedback in relation to Student Experience is valuable and our current approach loses out on taking advantage of this to drive forward empowering changes for our customers. By centralising activity, we can harvest the results within Evidence, whilst still providing colleges with flexibility to run the survey when and how they need to for their own practices. This project will strengthen our data capabilities and open up new opportunities for approaching Student Experience. 
-## Package Requirements
+
+## :exclamation: Package Requirements
 
 Refer to ```requirements.txt``` for the packages and versions used in this script. The code was created in a virtual environment and tested with the noted versions. 
 
