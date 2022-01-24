@@ -1,5 +1,9 @@
 # Centralising Survey Activity - UPE
 
+## :information_source: TLDR
+
+This script uses the SurveyMonkey API to download the structure of the survey and all of the responses. The extracted data is in JSON format, and then is changed into a Pandas dataframe. 
+
 ## Contents
 
 - Introduction
@@ -16,6 +20,18 @@ As part of our Balance Scorecard project, we track Student Satisfaction and Net 
 As part of the 2022-23 strategy, we aim to centralise the module survey process to UPE using Survey Monkey. Through this process, UPE would create and a control a new module survey which would be administered by the college, with the response data feeding back to a central repository. Colleges would have full access to all responses. This works similarly to the UPE Student Satisfaction Survey conducted annually. 
 
 Much like our statistical data, qualitative and quantitative feedback in relation to Student Experience is valuable and our current approach loses out on taking advantage of this to drive forward empowering changes for our customers. By centralising activity, we can harvest the results within Evidence, whilst still providing colleges with flexibility to run the survey when and how they need to for their own practices. This project will strengthen our data capabilities and open up new opportunities for approaching Student Experience. 
+## Package Requirements
+
+Refer to ```requirements.txt``` for the packages and versions used in this script. The code was created in a virtual environment and tested with the noted versions. 
+
+Use ```pip install -r requirements.txt``` to install packages and versions, if they are not already installed in your packages.
+
+An additional script file is used in ```upe_survey_download.py```. ```update_survey.py``` is imported to allow the extraction of survey data and details as JSON files.
+## SurveyMonkey API Usage
+
+ This script uses the SurveyMonkey API to return responses from surveys. The API is REST-based, employs OAuth 2.0, and returns responses in JSON. 
+
+ More information on the SurveyMonkey can be found in the [documentation files.](https://developer.surveymonkey.com/api/v3/#SurveyMonkey-Api)
 
 ## :calendar: Project Timeline 
 
@@ -36,15 +52,3 @@ Much like our statistical data, qualitative and quantitative feedback in relatio
 | w/c 14 Mar | Revised survey to be prepared following recommendations from colleges | Not started :orange_circle:
 | April | Identify a trial college | Not started :orange_circle:
 
-## Package Requirements
-
-Refer to ```requirements.txt``` for the packages and versions used in this script. The code was created in a virtual environment and tested with the noted versions. 
-
-Use ```pip install -r requirements.txt``` to install packages and versions, if they are not already installed in your packages.
-
-An additional script file is used in ```upe_survey_download.py```. ```update_survey.py``` is imported to allow the extraction of survey data and details as JSON files.
-## SurveyMonkey API Usage
-
- This script uses the SurveyMonkey API to return responses from surveys. The API is REST-based, employs OAuth 2.0, and returns responses in JSON. 
-
- More information on the SurveyMonkey can be found in the [documentation files.](https://developer.surveymonkey.com/api/v3/#SurveyMonkey-Api)
