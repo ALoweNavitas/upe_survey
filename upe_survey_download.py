@@ -33,7 +33,7 @@ def update_survey_details(survey_id, access_token):
         'Authorization': f"Bearer {access_token}"
         }
 
-    conn.request("GET", "/v3/surveys/{}/details".format(survey_id), headers=headers)
+    conn.request("GET", f"/v3/surveys/{survey_id}/details", headers=headers)
     res = conn.getresponse()
     survey_details = res.read()
     json_details = json.loads(survey_details)
@@ -57,7 +57,7 @@ def update_survey_data(survey_id, access_token):
         'Authorization': f"Bearer {access_token}"
         }
 
-    conn.request("GET", "/v3/surveys/{}/responses/bulk".format(survey_id), headers=headers)
+    conn.request("GET", f"/v3/surveys/{survey_id}/responses/bulk", headers=headers)
     res = conn.getresponse()
     survey_data = res.read()
     json_data = json.loads(survey_data)
