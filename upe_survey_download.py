@@ -5,6 +5,9 @@ import json
 import time
 from datetime import datetime
 
+## TODO: 
+# Load JSON files to memory, not saving to disk. 
+
 def main():
     pass
 
